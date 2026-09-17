@@ -289,22 +289,22 @@ MonoBehaviour:
   spawnHeight: 10
   despawnHeight: -1
   spawnableAssets:
-  - prefab: {fileID: 2458045317013862974, guid: 2755b4f76e5a049e3b516e4e89bf977b, type: 3}
+  - prefab: {fileID: 4162725399239483453, guid: c58f414f125384209b0917e713d7f285, type: 3}
     isBomb: 0
     spawnWeight: 0
-  - prefab: {fileID: 3453786765145818424, guid: e455a769b126f4856a2f1334e22432b8, type: 3}
+  - prefab: {fileID: 3913414307270408563, guid: 57c82675bc23e4bc287b16cfcf5fc39a, type: 3}
     isBomb: 0
     spawnWeight: 0
-  - prefab: {fileID: 5353120203335560842, guid: 2a45f0487a430471cbaa16f6ef63d9f9, type: 3}
+  - prefab: {fileID: 8921127618332245733, guid: b4afc2f0fdbdd479ea70fcc91e65dbf0, type: 3}
     isBomb: 0
     spawnWeight: 0
-  - prefab: {fileID: 898624679004674719, guid: 31003d635fb7a43a997a074497f1d766, type: 3}
+  - prefab: {fileID: 5922296548245272831, guid: 60c23d2c0bf1b47d59b8fadd0eb89857, type: 3}
     isBomb: 1
     spawnWeight: 0
-  - prefab: {fileID: 3680869609500409087, guid: 8b86268934451471c961f8c538722edf, type: 3}
+  - prefab: {fileID: 4162725399239483453, guid: c58f414f125384209b0917e713d7f285, type: 3}
     isBomb: 0
     spawnWeight: 0
-  - prefab: {fileID: 1599473447461558737, guid: 01efc634ecf1449f0ac1182bb02b683d, type: 3}
+  - prefab: {fileID: 2330424668820904816, guid: 94e5671eab6ac4e02a08b0b5c677c5e2, type: 3}
     isBomb: 0
     spawnWeight: 0
   minSpawnInterval: 0.5
