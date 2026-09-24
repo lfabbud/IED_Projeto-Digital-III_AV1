@@ -11,6 +11,9 @@ public class FallingObject : MonoBehaviour
     /// <summary>Indica se este objeto é a bomba (definido pelo ObjectSpawner ao instanciar).</summary>
     public bool IsBomb { get; private set; }
 
+    /// <summary>Indica se este objeto é um cupom (definido pelo ObjectSpawner ao instanciar).</summary>
+    public bool IsCoupon { get; private set; }
+
     private ObjectSpawner spawner;
     private float despawnHeight;
     private float columnAngle;
@@ -19,10 +22,11 @@ public class FallingObject : MonoBehaviour
     private Renderer cachedRenderer;
 
     /// <summary>Chamado pelo ObjectSpawner logo após a instanciação.</summary>
-    public void Initialize(ObjectSpawner spawnerRef, bool isBomb, float despawnY, float angle)
+    public void Initialize(ObjectSpawner spawnerRef, bool isBomb, bool isCoupon, float despawnY, float angle)
     {
         spawner = spawnerRef;
         IsBomb = isBomb;
+        IsCoupon = isCoupon;
         despawnHeight = despawnY;
         columnAngle = angle;
     }
@@ -53,8 +57,7 @@ public class FallingObject : MonoBehaviour
     /// caso contrário, é destruído imediatamente.
     /// IMPORTANTE: o fade só funciona visualmente se o material do objeto estiver configurado para
     /// suportar transparência (ex.: Rendering Mode "Fade"/"Transparent" no Built-in RP, ou Surface Type
-    /// "Transparent" no URP/HDRP). Não tenho como confirmar qual pipeline de render seu projeto usa,
-    /// então vale conferir isso no material dos seus prefabs.
+    /// "Transparent" no URP/HDRP).
     /// </summary>
     public void Collect(float fadeDuration)
     {
